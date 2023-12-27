@@ -1,0 +1,58 @@
+
+/*
+:root {
+    --main-bg-color: hsl(0, 0%, 25%);
+    --second-bg-color:  hsl(0, 0%, 10%);
+    --main-accent-color: hsl(290, 62%, 62%);
+    --second-accent-color: hsl(290, 46%, 69%);
+    --main-text-color: hsl(0, 0%, 87%);
+    --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 3px;
+    --border-radius: 5px;
+  }
+*/  
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card{
+    width: 300px;
+    margin: 1rem;
+    background-color: burlywood;
+    box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie movie-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.movie known-for{
+
+}

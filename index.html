@@ -15,55 +15,35 @@
   <body>
     <header>
       <h1>Movie muddle</h1>
-
-      <button id="ratedBtn">Top 10 <b>highest rated</b> movies</button>
-
-      <form id="formPopular">
-        <button id="popularBtn" type="submit">
-          Top 10 <b>most popular</b> movies
-        </button>
-      </form>
-
-      <form id="searchMovieOrPerson">
-        <input type="text" id="searchInput" placeholder="Search for" required />
-
-        <fieldset>
-          <input
-            type="radio"
-            id="movieRadio"
-            name="searchType"
-            value="movie"
-            checked
-          />
-          <label for="movieRadio">Movie</label>
-
-          <input
-            type="radio"
-            id="personRadio"
-            name="searchType"
-            value="person"
-          />
-          <label for="personRadio">Person</label>
-        </fieldset>
-
-        <button class="button-display">Search</button>
-      </form>
     </header>
+    <button id="ratedBtn">Top rated</button>
+
+    <button id="popularBtn">Most popular</button>
+
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search for" required />
+      <fieldset>
+        <input
+          type="radio"
+          id="movieRadio"
+          name="searchType"
+          value="movie"
+          checked
+        />
+        <label for="movieRadio">Movie</label>
+        <input type="radio" id="personRadio" name="searchType" value="person" />
+        <label for="personRadio">Person</label>
+      </fieldset>
+
+      <button type="submit" class="button-display">Search</button>
+    </form>
 
     <main id="mainContainer">
-      <!-- <div id="containerRated"></div>
-
-      <div id="containerPopular"></div>
-
-      <div id="containerMovieSearch"></div>
-
-      <div id="containerPersonSearch"></div>
-    --></main>
-
-    <div id="containerError">
-      <div id="errorContainer" class="container">
-        <h2 id="errorMessage"></h2>
+      <div id="containerError">
+        <div id="errorContainer" class="container">
+          <h2 id="errorMessage"></h2>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
